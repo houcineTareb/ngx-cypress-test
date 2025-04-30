@@ -17,8 +17,10 @@ jobs:
 
     - name: Install dependencies
       run: npm install --save-dev --force
+    - name: compile application
+      run: npm start 
     - name: Run tests
-      run: npm run cypress:e2e
+      run: npx cypress run
 
     - name: Publish Test Results
       uses: EnricoMi/publish-unit-test-result-action@v2
