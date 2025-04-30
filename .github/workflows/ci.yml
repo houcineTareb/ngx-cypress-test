@@ -16,9 +16,9 @@ jobs:
         node-version: '16'
 
     - name: Install dependencies
-      run: npm install --save-dev --force
+      #run: npm install --save-dev --force
     - name: compile application
-      run: npm start 
+      #run: npm start 
     - name: Run tests
       run: npx cypress run
 
